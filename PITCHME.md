@@ -7,19 +7,9 @@
 # Au programme 
 ### I. Introduction
 ### II. Environnement de travail
-1. Le MAME
-2. NOWLY
-3. Les outils de travail
 ### III.Apprentissage d'Android
-1. Présentation d'Android
-2. Le support d'apprentissage principal : OpenClassRoom
-3. Les difficultés rencontrées
 ### IV. Premier projet : Energetics
-1. Présentation
-2. Les bonus
 ### V. Second projet : refactorisation d'Aintro
-1. Présentation
-2. Les fragments
 ### VI. Conclusion
 ### VII. Questions ?
 
@@ -58,7 +48,7 @@
 ### Projets :
 |                        |                                                                                                                       |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------|
-|Nowly                   | "papa" d'Aintro                                                                                                          |
+|Nowly                   | "papa" d'Aintro                                                                                                       |
 |Aintro                  |![Aintro](https://lh3.googleusercontent.com/qF77BoA8pwfNvAtIYKzgN3d23EJE8WVjDtfHeVbcdmE6jKtP3pN5Dq67T-bwCmXqSA=w300-rw)|
 |et d'autres             | Files, Senseï...                                                                                                      |
 
