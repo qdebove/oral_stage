@@ -45,14 +45,9 @@
 
 +++
 
-### Manysinn Thin
-![Many](https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAh_AAAAJDQ3ZDlkYTIyLWE1MzctNDNlYy1hNmU5LWRlNmM2MWVkYjEzNw.jpg)
-
-### Jérome Heissler
-![Jerome](https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/3/000/121/063/2ae3e5d.jpg)
-
-### Mathieu Bolard
-![Mathieu](https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/4/005/099/26e/3f6eca5.jpg)
+|Manysinn Thin                                                                                                                       |Jérome Heissler                                                                        |Mathieu Bolard                                                                          |
+|------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
+|![Many](https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAh_AAAAJDQ3ZDlkYTIyLWE1MzctNDNlYy1hNmU5LWRlNmM2MWVkYjEzNw.jpg)|![Jerome](https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/3/000/121/063/2ae3e5d.jpg)|![Mathieu](https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/4/005/099/26e/3f6eca5.jpg)| 
 
 +++
 
@@ -63,9 +58,11 @@
 ### Projets :
 |                        |                                                                                                                       |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------|
-|Nowly : "papa" d'Aintro |                                                                                                                       |
+|Nowly                   | "papa" d'Aintro                                                                                                          |
 |Aintro                  |![Aintro](https://lh3.googleusercontent.com/qF77BoA8pwfNvAtIYKzgN3d23EJE8WVjDtfHeVbcdmE6jKtP3pN5Dq67T-bwCmXqSA=w300-rw)|
 |et d'autres             | Files, Senseï...                                                                                                      |
+
++++
 
 ### Prestation :
 * Satable

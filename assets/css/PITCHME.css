@@ -9,3 +9,8 @@
 .reveal h3 {
     font-size: 1em;
 }
+
+.reveal table td, .reveal table th {
+    vertical-align: middle;
+    text-align: center;
+}
