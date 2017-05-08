@@ -37,9 +37,6 @@
 +++
 
 ## Le mame
-
-+++
-
 ![Map MAME](http://www.tech-orleans.fr/wp-content/uploads/2015/06/FAA_MAME_TOURS_EXTERIEUR_PARVIS_03.jpg)
 
 +++
@@ -64,10 +61,11 @@
 +++
 
 ### Projets :
-* Nowly : "papa" d'Aintro
-* Aintro
-![Aintro](https://lh3.googleusercontent.com/qF77BoA8pwfNvAtIYKzgN3d23EJE8WVjDtfHeVbcdmE6jKtP3pN5Dq67T-bwCmXqSA=w300-rw)
-* et d'autres comme Files, Senseï...
+|                        |                                                                                                                       |
+|------------------------|-----------------------------------------------------------------------------------------------------------------------|
+|Nowly : "papa" d'Aintro |                                                                                                                       |
+|Aintro                  |![Aintro](https://lh3.googleusercontent.com/qF77BoA8pwfNvAtIYKzgN3d23EJE8WVjDtfHeVbcdmE6jKtP3pN5Dq67T-bwCmXqSA=w300-rw)|
+|et d'autres             | Files, Senseï...                                                                                                      |
 
 ### Prestation :
 * Satable
