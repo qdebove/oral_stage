@@ -46,11 +46,11 @@
 +++
 
 ### Projets :
-|                        |                                                                                                                       |
-|------------------------|-----------------------------------------------------------------------------------------------------------------------|
-|Nowly                   | "papa" d'Aintro                                                                                                       |
-|Aintro                  |![Aintro](https://lh3.googleusercontent.com/qF77BoA8pwfNvAtIYKzgN3d23EJE8WVjDtfHeVbcdmE6jKtP3pN5Dq67T-bwCmXqSA=w300-rw)|
-|et d'autres             | Files, Senseï...                                                                                                      |
+|                        |                                   |
+|------------------------|-----------------------------------|
+|Nowly                   | "papa" d'Aintro                   |
+|Aintro                  |![Aintro](assets/images/Aintro.jpg)|
+|et d'autres             | Files, Senseï...                  |
 
 +++
 
@@ -112,8 +112,6 @@
 
 ### Vue
 
-* Vue : base des composants pour intéraction et l'interactivité. Placées dans des layout (xml).
-* Exemple de vue : Button, TextView...
 ![Vues](assets/images/view_group.png)
 
 +++
@@ -127,9 +125,6 @@
 
 ### Fragment
 
-* Fragment : partie de l'écran.
-* Destiné à être remplacé ou détruit.
-* Constructeur par défaut uniquement.
 ![Fragments](assets/images/android_fragments_d001_why_fragments.png)
 
 +++
@@ -138,7 +133,7 @@
 
 ### Cycle de vie 
 
-|Activité                                                                                                                                |Fragment                                                                    |
+|Activité                                                                                                                                |Fragment                                                                                                                                |
 |----------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
 |![Activity_life_transition](https://raw.githubusercontent.com/qdebove/oral_stage/master/assets/images/activity_lifecycle_transition.png)|![Fragment_life_transition](https://raw.githubusercontent.com/qdebove/oral_stage/master/assets/images/fragment_lifecycle_transition.jpg)|
 
@@ -158,17 +153,38 @@
 
 ## Apercu charte graphique (non validée)
 
++++
+
 ![Charte_graphique_energetics](assets/images/charte_graphique_energetics.png)
 
 +++
 
 ## Les grandes lignes du code
 
-* Création de 2 RecycleView.
 * Une classe Article.
+* Création de 2 RecycleView.
 * Un Singleton.
 
 +++
+
+### La classe Article
+
+* Facilité d'accès aux informations.
+* Impléments Serializable.
+* CharSequence
+
++++
+
+### Les RecycleView
+
+|    |RecycleView                                       |ListView                                                          |
+|----|--------------------------------------------------|------------------------------------------------------------------|
+|Pro |ViewHolder, Animation, Performances, LayoutManager|Mise en place, petite liste, données simples (un seul TextView...)|
+|Cons| API min 7, plus compliqué à mettre en place      |Mauvaise avec les collections, pas d'animations personnalisées    |
+
++++
+
+![!](assets/images/06-recyclerviewer-adapter.png)
 
 ## Les bonus
 
@@ -188,4 +204,20 @@ Picasso.with(context).load("http://i.imgur.com/DvpvklR.png").into(imageView);
 * UX important.
 
 ---
+
+# Second projet : Réfactorisation d'Aintro
+![Logo_Aintro](assets/images/)
+
++++
+
+## Présentation
+
+* Expérience reposant sur géoloc.
+* Matching prédictif.
+* Connection par Twitter et récemment Linkedin.
+
++++
+
+## Les bibliothèques utilisées
+
 
