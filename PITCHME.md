@@ -59,10 +59,10 @@
 | Satable | ![MacDO](https://heureu.com/wp-content/uploads/2016/10/redwire-singapore-ronald-macdonald-clown.jpg)|
 |---------|-----------------------------------------------------------------------------------------------------|
 
-+++
++++?image=https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Fibonacci_spiral_34.svg/2000px-Fibonacci_spiral_34.svg.png
 
 ## Les outils de travail
-?image=https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Fibonacci_spiral_34.svg/2000px-Fibonacci_spiral_34.svg.png
+
 * Bitbucket
 * Jira + suite Fibonnaci
 * Slack
@@ -106,23 +106,35 @@
  
 +++
 
-## Vues, activités et fragments
+## Vue, activité et fragment
 
-* Vue : base des composants pour intéraction et l'interactivité. Placées dans des layout (xml)
++++
+
+### Vue
+
+* Vue : base des composants pour intéraction et l'interactivité. Placées dans des layout (xml).
 * Exemple de vue : Button, TextView...
+![Vues](assets/images/view_group.png)
+
++++
+
+### Activité
+
 * Activité ~ une page et extends du Context.
+![Activités](assets/images/android-pass-data-to-activity.png)
 
 +++
 
-### Fragments
+### Fragment
 
-* Fragments : parties de l'écran.
-* Destinés à être remplacés ou détruits.
+* Fragment : partie de l'écran.
+* Destiné à être remplacé ou détruit.
 * Constructeur par défaut uniquement.
+![Fragments](assets/images/android_fragments_d001_why_fragments.png)
 
 +++
 
-## Difficulté rencontrée
+## La principale difficulté rencontrée
 
 ### Cycle de vie 
 
@@ -133,3 +145,47 @@
 ---
 
 # IV. Premier projet : Energetics
+![Logo_energetics](assets/images/Energetics_Logo.jpeg)
+
++++
+
+## Présentation
+
+* Marque exclusive Intersport.
+* Souhaite une application tampon "vitrine".
+
++++
+
+## Apercu charte graphique (non validée)
+
+![Charte_graphique_energetics](assets/images/charte_graphique_energetics.png)
+
++++
+
+## Les grandes lignes du code
+
+* Création de 2 RecycleView.
+* Une classe Article.
+* Un Singleton.
+
++++
+
+## Les bonus
+
+* Librairie Picasso
+```java
+Picasso.with(context).load("http://i.imgur.com/DvpvklR.png").into(imageView);
+```
+* L'effet de parallaxe : SensorManager.
+* Bounce sur RecycleView.
+
++++
+
+## Conclusion du projet
+
+* Intégration difficile.
+* Problème de mémoire.
+* UX important.
+
+---
+
