@@ -7,7 +7,7 @@
 # Au programme 
 ### I. Introduction
 ### II. Environnement de travail
-### III.Apprentissage d'Android
+### III. Android
 ### IV. Premier projet : Energetics
 ### V. Second projet : refactorisation d'Aintro
 ### VI. Conclusion
@@ -15,14 +15,14 @@
 
 ---
 
-# Introduction
+# I. Introduction
 
 ### Milieu paramédical : réorientation
 ### Ambiance unique
 
 ---
 
-# Environnement de travail
+# II. Environnement de travail
 
 +++
 
@@ -55,9 +55,82 @@
 +++
 
 ### Prestation :
-* Satable
-![MacDO](https://heureu.com/wp-content/uploads/2016/10/redwire-singapore-ronald-macdonald-clown.jpg)
+
+| Satable | ![MacDO](https://heureu.com/wp-content/uploads/2016/10/redwire-singapore-ronald-macdonald-clown.jpg)|
+|---------|-----------------------------------------------------------------------------------------------------|
 
 +++
 
 ## Les outils de travail
+
+* Bitbucket
+* Jira + suite Fibonnaci
+---?image=https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Fibonacci_spiral_34.svg/2000px-Fibonacci_spiral_34.svg.png
+* Slack
+
+---
+
+# III. Apprentissage d'Android
+
++++
+
+## Présentation d'Android
+
+* Système exploitation mobile basé sur noyau Linux.
+* Développé par Google, lancé en 2007.
+* 80% parts de marché dans le monde.
+
++++
+
+## Versionning
+
+* Noms de desserts et progression alphabétique
+![Versionning](http://3.bp.blogspot.com/-xxixKWi26CU/VnuOg6Z3d7I/AAAAAAAAAuM/qBrHidasRm0/s1600/droid.jpg)
+
++++
+
+## Java et Android
+
+* V4.4 et inférieur : Dalvik
+* Au delà : ART (Android RunTime)
+
++++
+
+## Création d'un projet
+
+* Deux fichiers importants : Gradle et Manifest
+* Version de l'API importante !
+
++++
+
+## Arborescence d'un projet vierge
+
+![Arborescence](assets/images/arborescence_projet.png)
+ 
++++
+
+## Vues, activités et fragments
+
+* Vue : base des composants pour intéraction et l'interactivité. Placées dans des layout (xml)
+* Exemple de vue : Button, TextView...
+* Activité ~ une page et extends du Context.
+
++++
+
+* Fragments : parties de l'écran.
+* Destinés à être remplacés ou détruits.
+* Constructeur par défaut uniquement.
+
++++
+
+## Difficulté rencontrée
+
+### Cycle de vie 
+
+|Activité                                                                    |Fragment                                                                    |
+|----------------------------------------------------------------------------|----------------------------------------------------------------------------|
+|![Activity_life_transition](assets/images/activity_lifecycle_transition.png)|![Fragment_life_transition](assets/images/fragment_lifecycle_transition.jpg)|
+
+---
+
+# IV. Premier projet : Energetics
