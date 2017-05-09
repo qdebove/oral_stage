@@ -62,10 +62,9 @@
 +++
 
 ## Les outils de travail
-
+?image=https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Fibonacci_spiral_34.svg/2000px-Fibonacci_spiral_34.svg.png
 * Bitbucket
 * Jira + suite Fibonnaci
----?image=https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Fibonacci_spiral_34.svg/2000px-Fibonacci_spiral_34.svg.png
 * Slack
 
 ---
@@ -103,8 +102,6 @@
 
 +++
 
-## Arborescence d'un projet vierge
-
 ![Arborescence](assets/images/arborescence_projet.png)
  
 +++
@@ -117,6 +114,8 @@
 
 +++
 
+### Fragments
+
 * Fragments : parties de l'écran.
 * Destinés à être remplacés ou détruits.
 * Constructeur par défaut uniquement.
@@ -127,9 +126,9 @@
 
 ### Cycle de vie 
 
-|Activité                                                                    |Fragment                                                                    |
-|----------------------------------------------------------------------------|----------------------------------------------------------------------------|
-|![Activity_life_transition](assets/images/activity_lifecycle_transition.png)|![Fragment_life_transition](assets/images/fragment_lifecycle_transition.jpg)|
+|Activité                                                                                                                                |Fragment                                                                    |
+|----------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
+|![Activity_life_transition](https://raw.githubusercontent.com/qdebove/oral_stage/master/assets/images/activity_lifecycle_transition.png)|![Fragment_life_transition](https://raw.githubusercontent.com/qdebove/oral_stage/master/assets/images/fragment_lifecycle_transition.jpg)|
 
 ---
 
