@@ -49,7 +49,7 @@
 |                        |                                   |
 |------------------------|-----------------------------------|
 |Nowly                   | "papa" d'Aintro                   |
-|Aintro                  |![Aintro](assets/images/Aintro.jpg)|
+|Aintro                  |![Aintro](https://raw.githubusercontent.com/qdebove/oral_stage/master/assets/images/Aintro.jpg)|
 |et d'autres             | Files, Senseï...                  |
 
 +++
@@ -180,11 +180,13 @@
 |    |RecycleView                                       |ListView                                                          |
 |----|--------------------------------------------------|------------------------------------------------------------------|
 |Pro |ViewHolder, Animation, Performances, LayoutManager|Mise en place, petite liste, données simples (un seul TextView...)|
-|Cons| API min 7, plus compliqué à mettre en place      |Mauvaise avec les collections, pas d'animations personnalisées    |
+|Cons|API min 7, plus compliquée à mettre en place      |Mauvaise avec les collections, pas d'animations personnalisées    |
 
 +++
 
 ![!](assets/images/06-recyclerviewer-adapter.png)
+
++++
 
 ## Les bonus
 
@@ -205,8 +207,8 @@ Picasso.with(context).load("http://i.imgur.com/DvpvklR.png").into(imageView);
 
 ---
 
-# Second projet : Réfactorisation d'Aintro
-![Logo_Aintro](assets/images/)
+# V.Second projet : Réfactorisation d'Aintro
+![Logo_Aintro](assets/images/Aintro.jpg)
 
 +++
 
@@ -215,9 +217,60 @@ Picasso.with(context).load("http://i.imgur.com/DvpvklR.png").into(imageView);
 * Expérience reposant sur géoloc.
 * Matching prédictif.
 * Connection par Twitter et récemment Linkedin.
+* Problèmes majeurs : transition entre écrans pas fluide + une activité lancée à chaque nouvelle page
 
 +++
 
 ## Les bibliothèques utilisées
 
+* ButterKnife
+```'*.java'
+@OnClick(R.id.submit)
+public void submit(View view) {
+  // TODO submit data to server...
+}
+```
+* Retrofit
+```'*.java'
+public interface GitHubService {
+  @GET("users/{user}/repos")
+  Call<List<Repo>> listRepos(@Path("user") String user);
+}
+```
+* Dagger 2
 
++++
+
+## Exemple d'utilisation de fragments
+
+```'*.java'
+InvitationFragment invitationFragment = new InvitationFragment();
+getActivity().getSupportFragmentManager()
+        .beginTransaction()
+        .setCustomAnimations(R.anim.anim_in_left, R.anim.anim_out_right, R.anim.anim_in_right, R.anim.anim_out_left)
+        .replace(R.id.nearby_activity_fragment, invitationFragment, "invitationFragment")
+        .addToBackStack(null)
+        .commit();
+```
+
++++
+
+## Conclusion du projet
+
+* Lecture du code / compréhension
+* Manque de commentaire
+* Dagger 2
+
+---?image=https://raw.githubusercontent.com/qdebove/oral_stage/master/assets/images/android_vs_apple.jpg
+
+# VI. Conclusion
+
+* Un vrai plaisir de voir ses applications !
+* Plein de personnes / métiers différents.
+* Développement personnel d'une petite application de récupération de playlist youtube.
+
+---
+
+# VII. Des questions ?
+
+![Android_happy](assets/images/Android-Happy2-e1357315066858.jpg)
