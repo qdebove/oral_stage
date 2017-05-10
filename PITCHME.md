@@ -190,14 +190,26 @@
 
 ### Le singleton
 
-TODO
+* Créer et charger une seule fois les données des articles.
+```'*.java'
+...
+private static ArticleListSingleton instance = null;
+...
+public static ArticleListSingleton getInstance(Context context){
+        if(instance == null) {
+            instance = new ArticleListSingleton(context);
+        }
+        return instance;
+}
+```
+* Chargement au démarrage
 
 +++
 
 ## Les bonus
 
 * Librairie Picasso
-```java
+```'*.java'
 Picasso.with(context).load("http://i.imgur.com/DvpvklR.png").into(imageView);
 ```
 * L'effet de parallaxe : SensorManager.
