@@ -188,6 +188,12 @@
 
 +++
 
+### Le singleton
+
+TODO
+
++++
+
 ## Les bonus
 
 * Librairie Picasso
@@ -263,11 +269,11 @@ getActivity().getSupportFragmentManager()
 
 ---?image=https://raw.githubusercontent.com/qdebove/oral_stage/master/assets/images/android_vs_apple.jpg
 
-# VI. Conclusion
+# <p style="color: white">VI. Conclusion</p>
 
-* Un vrai plaisir de voir ses applications !
-* Plein de personnes / métiers différents.
-* Développement personnel d'une petite application de récupération de playlist youtube.
+* <p style="color: white">Un vrai plaisir de voir ses applications !</p>
+* <p style="color: white">Plein de personnes / métiers différents.</p>
+* <p style="color: white">Développement personnel d'une petite application de récupération de playlist youtube.</p>
 
 ---
 
