@@ -318,7 +318,7 @@ getActivity().getSupportFragmentManager()
 ```
 php artisan make:migration create_users_table
 ```
-* deux fonctions up et down.
+* Deux fonctions up et down.
 
 +++ 
 
@@ -356,7 +356,8 @@ public function up()
 
 ## Le model
 
-* Communique avec la bdd
+* Communique avec la bdd.
+
 ```'*.php'
 class Users extends BaseUsers implements AuthenticatableContract, AuthorizableContract, CanResetPasswordContract
 {
@@ -386,7 +387,9 @@ class Users extends BaseUsers implements AuthenticatableContract, AuthorizableCo
 
 +++
 
-## Exemple d'utilisation
+## Exemple d'utilisation 
+
+La classe Vue :
 
 ```'*.javascript'
 var app = new Vue({
@@ -404,6 +407,10 @@ var app = new Vue({
         },
         getCoordinates: function() {...}
 ```
++++
+
+L'intégration dans le php :
+
 ```'*.php'
 <script src="{{asset('js/vue.min.js')}}"></script>
 
