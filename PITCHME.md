@@ -292,3 +292,124 @@ getActivity().getSupportFragmentManager()
 # VII. Des questions ?
 
 ![Android_happy](assets/images/Android-Happy2-e1357315066858.jpg)
+
+---
+
+# VIII. Bonus
+
++++
+
+## Le tout premier projet : TouristApp
+
+* Idée sortie d'un start-up weekend.
+* Trouver / noter toilettes publics / privées.
+* Laravel + Vue.js
+
++++
+
+![Logo_laravel](assets/images/logo_laravel.png)
+
++++
+
+## Migrations
+
+* Utiliser pour créer des tables
+* Commande artisan :
+```
+php artisan make:migration create_users_table
+```
+* deux fonctions up et down.
+
++++ 
+
+```'*.php'
+public function up()
+    {
+        Schema::create('user', function(Blueprint $table) {
+            $table->increments('id');
+            $table->string('sex');
+            $table->string('username')->unique();
+            $table->string('email')->unique();
+            $table->string('password');
+            $table->boolean('valid')->default(true);
+            $table->rememberToken();
+            $table->timestamps();
+        });
+
+        $faker = Faker\Factory::create();
+
+        $limit = 33;
+
+        for ($i = 0; $i < $limit; $i++) {
+            DB::table('user')->insert([ //,
+                'sex' => $faker->randomElement($array = array ('M','F')),
+                'username' => $faker->unique()->name,
+                'email' => $faker->unique()->email,
+                'password' => $faker->colorName
+                //'password' => bcrypt('secret')
+            ]);
+        }
+    }
+```
+
++++
+
+## Le model
+
+* Communique avec la bdd
+```'*.php'
+class Users extends BaseUsers implements AuthenticatableContract, AuthorizableContract, CanResetPasswordContract
+{
+    use Notifiable;
+    use Authenticatable, Authorizable, CanResetPassword;
+    protected $primaryKey = 'id';
+    protected $table = 'user';
+    protected $fillable = [
+        'username', 'email', 'password', 'created_at_ip', 'updated_at_ip'
+    ];
+    protected $hidden = [
+        'password', 'remember_token'
+    ];
+}
+```
+
++++
+
+![Logo_vuejs](assets/images/vuejs-logo.jpg)
+
++++
+
+## Vue.js
+
+* Framework léger.
+* Affichage dynamique de contenu.
+
++++
+
+## Exemple d'utilisation
+
+```'*.javascript'
+var app = new Vue({
+    el: '#maincontent',
+    data: {
+        query: '',
+        map: {}
+    },
+    methods: {
+        initMap: function() {
+            this.map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 47.3930433, lng: 0.6689841},
+            zoom: 8
+            });
+        },
+        getCoordinates: function() {...}
+```
+```'*.php'
+<script src="{{asset('js/vue.min.js')}}"></script>
+
+<button class="btn btn-default" type="button" v-on:click="getCoordinates">Search</button>
+
+<script src="{{asset('js/vuejs/map.vue.js')}}"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiW4PjLK-izmMMlMBZQcfuR6B7WJzFuu4&callback=app.initMap&libraries=places"></script>
+```
+
